@@ -16,6 +16,7 @@
 		B4F9D2D4274FCA5A00B4B14D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9D2D3274FCA5A00B4B14D /* Post.swift */; };
 		B4F9D2D6274FCD0F00B4B14D /* Error+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9D2D5274FCD0F00B4B14D /* Error+.swift */; };
 		B4F9D2D8274FD75E00B4B14D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9D2D7274FD75E00B4B14D /* API.swift */; };
+		B4F9D2DA274FE1CA00B4B14D /* PromiseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9D2D9274FE1CA00B4B14D /* PromiseHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B4F9D2D3274FCA5A00B4B14D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		B4F9D2D5274FCD0F00B4B14D /* Error+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+.swift"; sourceTree = "<group>"; };
 		B4F9D2D7274FD75E00B4B14D /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		B4F9D2D9274FE1CA00B4B14D /* PromiseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				B4F9D2D1274FBE5A00B4B14D /* ContentViewModel.swift */,
 				B4F9D2D5274FCD0F00B4B14D /* Error+.swift */,
 				B4F9D2D7274FD75E00B4B14D /* API.swift */,
+				B4F9D2D9274FE1CA00B4B14D /* PromiseHandler.swift */,
 				B4F9D2CC274FBBEC00B4B14D /* ContentView.swift */,
 				B461FFEB2749218900316D7E /* Assets.xcassets */,
 				B461FFED2749218900316D7E /* Preview Content */,
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F9D2DA274FE1CA00B4B14D /* PromiseHandler.swift in Sources */,
 				B4F9D2CD274FBBEC00B4B14D /* ContentView.swift in Sources */,
 				B4F9D2D6274FCD0F00B4B14D /* Error+.swift in Sources */,
 				B461FFE82749218700316D7E /* SwiftUILab3App.swift in Sources */,

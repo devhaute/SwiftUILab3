@@ -10,18 +10,15 @@ class ContentViewModel: ObservableObject {
     var cancellables: Set<AnyCancellable> = []
     
     func fetch(postWithId id: Int, completion: @escaping (Error?) -> ()) {
-        api.fetchPost(postWithId: id)
-            .sink { result in
-                switch result {
-                case .finished:
-                    break
-                case .failure(let error):
-                    completion(error)
-                }
-            } receiveValue: { post in
+        let promise = api.fetch(postWithId: id)
+        PromiseHandler<Post>.fulfill(promise, storedIn: &cancellables) { result in
+            switch result {
+            case .success(let post):
                 self.post = post
                 completion(nil)
+            case .failure(let error):
+                completion(error)
             }
-            .store(in: &cancellables)
+        }
     }
 }
