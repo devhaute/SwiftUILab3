@@ -8,17 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		B461FFE82749218700316D7E /* SwiftUILab3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B461FFE72749218700316D7E /* SwiftUILab3App.swift */; };
-		B461FFEA2749218700316D7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B461FFE92749218700316D7E /* ContentView.swift */; };
 		B461FFEC2749218900316D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B461FFEB2749218900316D7E /* Assets.xcassets */; };
 		B461FFEF2749218900316D7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B461FFEE2749218900316D7E /* Preview Assets.xcassets */; };
+		B4F9D2CD274FBBEC00B4B14D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9D2CC274FBBEC00B4B14D /* ContentView.swift */; };
+		B4F9D2D0274FBD3300B4B14D /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = B4F9D2CF274FBD3300B4B14D /* Networking */; };
+		B4F9D2D2274FBE5A00B4B14D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9D2D1274FBE5A00B4B14D /* ContentViewModel.swift */; };
+		B4F9D2D4274FCA5A00B4B14D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9D2D3274FCA5A00B4B14D /* Post.swift */; };
+		B4F9D2D6274FCD0F00B4B14D /* Error+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9D2D5274FCD0F00B4B14D /* Error+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B461FFE42749218700316D7E /* SwiftUILab3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUILab3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B461FFE72749218700316D7E /* SwiftUILab3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILab3App.swift; sourceTree = "<group>"; };
-		B461FFE92749218700316D7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B461FFEB2749218900316D7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B461FFEE2749218900316D7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B4F9D2CC274FBBEC00B4B14D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B4F9D2D1274FBE5A00B4B14D /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		B4F9D2D3274FCA5A00B4B14D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		B4F9D2D5274FCD0F00B4B14D /* Error+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F9D2D0274FBD3300B4B14D /* Networking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +60,10 @@
 			isa = PBXGroup;
 			children = (
 				B461FFE72749218700316D7E /* SwiftUILab3App.swift */,
-				B461FFE92749218700316D7E /* ContentView.swift */,
+				B4F9D2D3274FCA5A00B4B14D /* Post.swift */,
+				B4F9D2D1274FBE5A00B4B14D /* ContentViewModel.swift */,
+				B4F9D2D5274FCD0F00B4B14D /* Error+.swift */,
+				B4F9D2CC274FBBEC00B4B14D /* ContentView.swift */,
 				B461FFEB2749218900316D7E /* Assets.xcassets */,
 				B461FFED2749218900316D7E /* Preview Content */,
 			);
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = SwiftUILab3;
+			packageProductDependencies = (
+				B4F9D2CF274FBD3300B4B14D /* Networking */,
+			);
 			productName = SwiftUILab3;
 			productReference = B461FFE42749218700316D7E /* SwiftUILab3.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = B461FFDB2749218700316D7E;
+			packageReferences = (
+				B4F9D2CE274FBD3300B4B14D /* XCRemoteSwiftPackageReference "Networking" */,
+			);
 			productRefGroup = B461FFE52749218700316D7E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B461FFEA2749218700316D7E /* ContentView.swift in Sources */,
+				B4F9D2CD274FBBEC00B4B14D /* ContentView.swift in Sources */,
+				B4F9D2D6274FCD0F00B4B14D /* Error+.swift in Sources */,
 				B461FFE82749218700316D7E /* SwiftUILab3App.swift in Sources */,
+				B4F9D2D2274FBE5A00B4B14D /* ContentViewModel.swift in Sources */,
+				B4F9D2D4274FCA5A00B4B14D /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +216,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -251,7 +271,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -277,6 +297,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +327,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +363,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B4F9D2CE274FBD3300B4B14D /* XCRemoteSwiftPackageReference "Networking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/freshOS/Networking";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B4F9D2CF274FBD3300B4B14D /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4F9D2CE274FBD3300B4B14D /* XCRemoteSwiftPackageReference "Networking" */;
+			productName = Networking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B461FFDC2749218700316D7E /* Project object */;
 }
