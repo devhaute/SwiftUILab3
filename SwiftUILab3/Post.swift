@@ -1,4 +1,5 @@
 import Foundation
+import Networking
 
 struct Post: Codable {
     let userId: Int
@@ -17,4 +18,8 @@ struct Post: Codable {
         self.title = title ?? ""
         self.body = body ?? ""
     }
+}
+
+extension Post: NetworkingJSONDecodable {
+    
 }

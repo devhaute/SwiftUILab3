@@ -12,5 +12,7 @@ extension Error {
             print("Networking error code: \(networkingError.code)")
         default:
             print(self.localizedDescription)
+        }
     }
 }
+

@@ -15,6 +15,7 @@
 		B4F9D2D2274FBE5A00B4B14D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9D2D1274FBE5A00B4B14D /* ContentViewModel.swift */; };
 		B4F9D2D4274FCA5A00B4B14D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9D2D3274FCA5A00B4B14D /* Post.swift */; };
 		B4F9D2D6274FCD0F00B4B14D /* Error+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9D2D5274FCD0F00B4B14D /* Error+.swift */; };
+		B4F9D2D8274FD75E00B4B14D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F9D2D7274FD75E00B4B14D /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B4F9D2D1274FBE5A00B4B14D /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		B4F9D2D3274FCA5A00B4B14D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		B4F9D2D5274FCD0F00B4B14D /* Error+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+.swift"; sourceTree = "<group>"; };
+		B4F9D2D7274FD75E00B4B14D /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				B4F9D2D3274FCA5A00B4B14D /* Post.swift */,
 				B4F9D2D1274FBE5A00B4B14D /* ContentViewModel.swift */,
 				B4F9D2D5274FCD0F00B4B14D /* Error+.swift */,
+				B4F9D2D7274FD75E00B4B14D /* API.swift */,
 				B4F9D2CC274FBBEC00B4B14D /* ContentView.swift */,
 				B461FFEB2749218900316D7E /* Assets.xcassets */,
 				B461FFED2749218900316D7E /* Preview Content */,
@@ -158,6 +161,7 @@
 				B4F9D2D6274FCD0F00B4B14D /* Error+.swift in Sources */,
 				B461FFE82749218700316D7E /* SwiftUILab3App.swift in Sources */,
 				B4F9D2D2274FBE5A00B4B14D /* ContentViewModel.swift in Sources */,
+				B4F9D2D8274FD75E00B4B14D /* API.swift in Sources */,
 				B4F9D2D4274FCA5A00B4B14D /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
