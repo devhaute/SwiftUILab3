@@ -4,9 +4,8 @@ import SwiftUI
 struct SwiftUILab3App: App {
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                ContentView()
-            }
+            HomeView()
+                .edgesIgnoringSafeArea(.bottom)
         }
     }
 }
