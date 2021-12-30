@@ -1,11 +1,12 @@
 import SwiftUI
 
 struct HomeView: View {
+    @StateObject var homeVM = HomeViewModel()
+    
     var body: some View {
-        List {
-            ForEach(0..<10) { _ in
-                RandomUserRowView()
-            }
+        List(homeVM.randomUsers) { user in
+            RandomUserRowView(user: user)
+                .padding(.vertical, 5)
         }
         .listStyle(.plain)
     }
