@@ -7,27 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B443F597277DF51500D46027 /* RandomUser+Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B443F596277DF51500D46027 /* RandomUser+Response.swift */; };
-		B443F59B277DF90F00D46027 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B443F59A277DF90F00D46027 /* HomeViewModel.swift */; };
 		B461FFE82749218700316D7E /* SwiftUILab3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B461FFE72749218700316D7E /* SwiftUILab3App.swift */; };
 		B461FFEC2749218900316D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B461FFEB2749218900316D7E /* Assets.xcassets */; };
 		B461FFEF2749218900316D7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B461FFEE2749218900316D7E /* Preview Assets.xcassets */; };
-		B4BD59E9277C9EBB0038839A /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD59E8277C9EBB0038839A /* ProfileImageView.swift */; };
-		B4BD59EB277CAC940038839A /* RandomUserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD59EA277CAC940038839A /* RandomUserRowView.swift */; };
+		B4B6C8D227821F25003D0C1D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B6C8D127821F25003D0C1D /* LoginView.swift */; };
+		B4B6C8D627821F70003D0C1D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B6C8D527821F70003D0C1D /* User.swift */; };
 		B4BD59EE277CAF060038839A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B4BD59ED277CAF060038839A /* Alamofire */; };
-		B4DF7099277C9D6C0076237E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DF7098277C9D6C0076237E /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B443F596277DF51500D46027 /* RandomUser+Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RandomUser+Response.swift"; sourceTree = "<group>"; };
-		B443F59A277DF90F00D46027 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		B461FFE42749218700316D7E /* SwiftUILab3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUILab3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B461FFE72749218700316D7E /* SwiftUILab3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILab3App.swift; sourceTree = "<group>"; };
 		B461FFEB2749218900316D7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B461FFEE2749218900316D7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B4BD59E8277C9EBB0038839A /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
-		B4BD59EA277CAC940038839A /* RandomUserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserRowView.swift; sourceTree = "<group>"; };
-		B4DF7098277C9D6C0076237E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B4B6C8D127821F25003D0C1D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B4B6C8D527821F70003D0C1D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +55,9 @@
 		B461FFE62749218700316D7E /* SwiftUILab3 */ = {
 			isa = PBXGroup;
 			children = (
+				B4B6C8D427821F4B003D0C1D /* Model */,
+				B4B6C8D027821F16003D0C1D /* Core */,
 				B461FFE72749218700316D7E /* SwiftUILab3App.swift */,
-				B4DF709C277C9DF30076237E /* Extensions */,
-				B4DF7096277C9D460076237E /* Models */,
-				B4DF7097277C9D4C0076237E /* Core */,
 				B461FFEB2749218900316D7E /* Assets.xcassets */,
 				B461FFED2749218900316D7E /* Preview Content */,
 			);
@@ -79,46 +72,28 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B4DF7096277C9D460076237E /* Models */ = {
+		B4B6C8D027821F16003D0C1D /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				B443F596277DF51500D46027 /* RandomUser+Response.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		B4DF7097277C9D4C0076237E /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				B4DF709B277C9DE70076237E /* Components */,
-				B4DF709A277C9DDD0076237E /* Home */,
+				B4B6C8D327821F29003D0C1D /* Login */,
 			);
 			path = Core;
 			sourceTree = "<group>";
 		};
-		B4DF709A277C9DDD0076237E /* Home */ = {
+		B4B6C8D327821F29003D0C1D /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				B4DF7098277C9D6C0076237E /* HomeView.swift */,
-				B443F59A277DF90F00D46027 /* HomeViewModel.swift */,
+				B4B6C8D127821F25003D0C1D /* LoginView.swift */,
 			);
-			path = Home;
+			path = Login;
 			sourceTree = "<group>";
 		};
-		B4DF709B277C9DE70076237E /* Components */ = {
+		B4B6C8D427821F4B003D0C1D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B4BD59E8277C9EBB0038839A /* ProfileImageView.swift */,
-				B4BD59EA277CAC940038839A /* RandomUserRowView.swift */,
+				B4B6C8D527821F70003D0C1D /* User.swift */,
 			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		B4DF709C277C9DF30076237E /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,12 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4BD59E9277C9EBB0038839A /* ProfileImageView.swift in Sources */,
-				B4BD59EB277CAC940038839A /* RandomUserRowView.swift in Sources */,
-				B443F59B277DF90F00D46027 /* HomeViewModel.swift in Sources */,
-				B4DF7099277C9D6C0076237E /* HomeView.swift in Sources */,
 				B461FFE82749218700316D7E /* SwiftUILab3App.swift in Sources */,
-				B443F597277DF51500D46027 /* RandomUser+Response.swift in Sources */,
+				B4B6C8D227821F25003D0C1D /* LoginView.swift in Sources */,
+				B4B6C8D627821F70003D0C1D /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
