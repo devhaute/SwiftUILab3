@@ -27,6 +27,7 @@ struct ContentView: View {
             .padding(.bottom, 30)
             
             NavigationLink {
+//                ProfileView()
                 Text("내 프로필 보러가기")
             } label: {
                 Text("내 프로필 보러가기")
