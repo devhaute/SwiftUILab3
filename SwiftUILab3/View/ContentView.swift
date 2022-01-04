@@ -19,7 +19,7 @@ struct ContentView: View {
             }
             
             NavigationLink {
-                Text("회원가입 하러가기")
+                RegisterView()
             } label: {
                 Text("회원가입 하러가기")
                     .setLoginButtonStyle(backgroundColor: .black)

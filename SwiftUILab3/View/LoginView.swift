@@ -27,7 +27,7 @@ struct LoginView: View {
                 }
             }
         }
-        .navigationTitle("로그인 하기")
+        .navigationTitle("로그인")
     }
 }
 

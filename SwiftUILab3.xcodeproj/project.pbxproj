@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B43FBB1E278470CD00FF20F2 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43FBB1D278470CD00FF20F2 /* RegisterView.swift */; };
 		B461FFE82749218700316D7E /* SwiftUILab3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B461FFE72749218700316D7E /* SwiftUILab3App.swift */; };
 		B461FFEC2749218900316D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B461FFEB2749218900316D7E /* Assets.xcassets */; };
 		B461FFEF2749218900316D7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B461FFEE2749218900316D7E /* Preview Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B43FBB1D278470CD00FF20F2 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		B461FFE42749218700316D7E /* SwiftUILab3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUILab3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B461FFE72749218700316D7E /* SwiftUILab3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILab3App.swift; sourceTree = "<group>"; };
 		B461FFEB2749218900316D7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,7 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				B4B6C8D427821F4B003D0C1D /* Model */,
-				B4B6C8D027821F16003D0C1D /* Core */,
+				B4B6C8D027821F16003D0C1D /* View */,
 				B461FFE72749218700316D7E /* SwiftUILab3App.swift */,
 				B461FFEB2749218900316D7E /* Assets.xcassets */,
 				B461FFED2749218900316D7E /* Preview Content */,
@@ -74,21 +76,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B4B6C8D027821F16003D0C1D /* Core */ = {
+		B4B6C8D027821F16003D0C1D /* View */ = {
 			isa = PBXGroup;
 			children = (
 				B4B6C8D127821F25003D0C1D /* ContentView.swift */,
-				B4B6C8D327821F29003D0C1D /* Login */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		B4B6C8D327821F29003D0C1D /* Login */ = {
-			isa = PBXGroup;
-			children = (
 				B49CAD2C27832A19001543CE /* LoginView.swift */,
+				B43FBB1D278470CD00FF20F2 /* RegisterView.swift */,
 			);
-			path = Login;
+			path = View;
 			sourceTree = "<group>";
 		};
 		B4B6C8D427821F4B003D0C1D /* Model */ = {
@@ -176,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B461FFE82749218700316D7E /* SwiftUILab3App.swift in Sources */,
+				B43FBB1E278470CD00FF20F2 /* RegisterView.swift in Sources */,
 				B4B6C8D227821F25003D0C1D /* ContentView.swift in Sources */,
 				B49CAD2D27832A19001543CE /* LoginView.swift in Sources */,
 				B4B6C8D627821F70003D0C1D /* User.swift in Sources */,
