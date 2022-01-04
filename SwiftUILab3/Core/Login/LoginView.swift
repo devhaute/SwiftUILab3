@@ -1,46 +1,33 @@
 import SwiftUI
 
 struct LoginView: View {
-    let screen = UIScreen.main.bounds
+    @State private var emailInput = ""
+    @State private var passwordInput = ""
     
     var body: some View {
         VStack {
-            Image(systemName: "lock.shield.fill")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 130)
-                .padding(.bottom, 80)
-            
-            NavigationLink {
-                Text("로그인 하러 가기")
-            } label: {
-                Text("로그인 하러 가기")
-                    .setLoginButtonStyle(backgroundColor: .blue)
-            }
-            
-            NavigationLink {
-                Text("회원가입 하러가기")
-            } label: {
-                Text("회원가입 하러가기")
-                    .setLoginButtonStyle(backgroundColor: .black)
-            }
-            .padding(.bottom, 30)
-            
-            NavigationLink {
-                Text("내 프로필 보러가기")
-            } label: {
-                Text("내 프로필 보러가기")
-                    .setLoginButtonStyle(backgroundColor: .purple)
-            }
+            Form {
+                Section {
+                    TextField("이메일을 입력해주세요", text: $emailInput)
+                        .keyboardType(.emailAddress)
+                        .autocapitalization(.none)
+                    SecureField("비밀번호를 입력해주세요", text: $passwordInput)
+                        .keyboardType(.default)
+                } header: {
+                    Text("로그인 정보")
+                }
+                
+                Section {
+                    Button {
+                        //
+                    } label: {
+                        Text("로그인")
+                    }
 
-            NavigationLink {
-                Text("사용자 목록 보러가기")
-            } label: {
-                Text("사용자 목록 보러가기")
-                    .setLoginButtonStyle(backgroundColor: .green)
+                }
             }
         }
-        .padding()
+        .navigationTitle("로그인 하기")
     }
 }
 
@@ -49,25 +36,5 @@ struct LoginView_Previews: PreviewProvider {
         NavigationView {
             LoginView()
         }
-    }
-}
-
-struct LoginCustomTextStyle: ViewModifier {
-    let backgroundColor: Color
-    
-    func body(content: Content) -> some View {
-        content
-            .font(.title2)
-            .foregroundColor(.white)
-            .padding(.vertical, 20)
-            .frame(maxWidth: .infinity)
-            .background(backgroundColor)
-            .cornerRadius(5)
-    }
-}
-
-extension Text {
-    func setLoginButtonStyle(backgroundColor: Color) -> some View {
-        self.modifier(LoginCustomTextStyle(backgroundColor: backgroundColor))
     }
 }
