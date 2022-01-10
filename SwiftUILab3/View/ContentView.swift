@@ -27,15 +27,14 @@ struct ContentView: View {
             .padding(.bottom, 30)
             
             NavigationLink {
-//                ProfileView()
-                Text("내 프로필 보러가기")
+                ProfileView(user: User.dummyData)
             } label: {
                 Text("내 프로필 보러가기")
                     .setLoginButtonStyle(backgroundColor: .purple)
             }
 
             NavigationLink {
-                Text("사용자 목록 보러가기")
+                UserListView(users: [User.dummyData, User.dummyData, User.dummyData])
             } label: {
                 Text("사용자 목록 보러가기")
                     .setLoginButtonStyle(backgroundColor: .green)

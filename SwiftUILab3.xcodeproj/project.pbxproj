@@ -10,9 +10,14 @@
 		B43FBB1E278470CD00FF20F2 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43FBB1D278470CD00FF20F2 /* RegisterView.swift */; };
 		B43FBB202784739300FF20F2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43FBB1F2784739300FF20F2 /* ProfileView.swift */; };
 		B43FBB252784897B00FF20F2 /* OtherUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43FBB242784897B00FF20F2 /* OtherUserProfileView.swift */; };
+		B43FBB2727848B0D00FF20F2 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43FBB2627848B0D00FF20F2 /* UserListView.swift */; };
+		B43FBB2A27848CD400FF20F2 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43FBB2927848CD400FF20F2 /* ProfileImageView.swift */; };
+		B45D17E327886E31006D55EB /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D17E227886E31006D55EB /* ApiClient.swift */; };
 		B461FFE82749218700316D7E /* SwiftUILab3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B461FFE72749218700316D7E /* SwiftUILab3App.swift */; };
 		B461FFEC2749218900316D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B461FFEB2749218900316D7E /* Assets.xcassets */; };
 		B461FFEF2749218900316D7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B461FFEE2749218900316D7E /* Preview Assets.xcassets */; };
+		B488E01F278C355200AB9FCD /* BaseInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B488E01E278C355200AB9FCD /* BaseInterceptor.swift */; };
+		B488E022278C384F00AB9FCD /* ApiLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B488E021278C384F00AB9FCD /* ApiLogger.swift */; };
 		B49CAD2D27832A19001543CE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CAD2C27832A19001543CE /* LoginView.swift */; };
 		B4B6C8D227821F25003D0C1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B6C8D127821F25003D0C1D /* ContentView.swift */; };
 		B4B6C8D627821F70003D0C1D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B6C8D527821F70003D0C1D /* User.swift */; };
@@ -24,10 +29,15 @@
 		B43FBB1F2784739300FF20F2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		B43FBB2327847D7D00FF20F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B43FBB242784897B00FF20F2 /* OtherUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherUserProfileView.swift; sourceTree = "<group>"; };
+		B43FBB2627848B0D00FF20F2 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		B43FBB2927848CD400FF20F2 /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
+		B45D17E227886E31006D55EB /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		B461FFE42749218700316D7E /* SwiftUILab3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUILab3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B461FFE72749218700316D7E /* SwiftUILab3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUILab3App.swift; sourceTree = "<group>"; };
 		B461FFEB2749218900316D7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B461FFEE2749218900316D7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B488E01E278C355200AB9FCD /* BaseInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInterceptor.swift; sourceTree = "<group>"; };
+		B488E021278C384F00AB9FCD /* ApiLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiLogger.swift; sourceTree = "<group>"; };
 		B49CAD2C27832A19001543CE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B4B6C8D127821F25003D0C1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B4B6C8D527821F70003D0C1D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -45,6 +55,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B43FBB2827848C8000FF20F2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B43FBB2927848CD400FF20F2 /* ProfileImageView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B45D17DF27885FCA006D55EB /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B45D17E027885FD6006D55EB /* Router */,
+				B45D17E127885FDF006D55EB /* Interceptor */,
+				B488E020278C384200AB9FCD /* Helper */,
+				B45D17E227886E31006D55EB /* ApiClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B45D17E027885FD6006D55EB /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B45D17E127885FDF006D55EB /* Interceptor */ = {
+			isa = PBXGroup;
+			children = (
+				B488E01E278C355200AB9FCD /* BaseInterceptor.swift */,
+			);
+			path = Interceptor;
+			sourceTree = "<group>";
+		};
 		B461FFDB2749218700316D7E = {
 			isa = PBXGroup;
 			children = (
@@ -64,12 +108,13 @@
 		B461FFE62749218700316D7E /* SwiftUILab3 */ = {
 			isa = PBXGroup;
 			children = (
-				B43FBB2327847D7D00FF20F2 /* Info.plist */,
 				B4B6C8D427821F4B003D0C1D /* Model */,
+				B45D17DF27885FCA006D55EB /* API */,
 				B4B6C8D027821F16003D0C1D /* View */,
 				B461FFE72749218700316D7E /* SwiftUILab3App.swift */,
-				B461FFEB2749218900316D7E /* Assets.xcassets */,
 				B461FFED2749218900316D7E /* Preview Content */,
+				B461FFEB2749218900316D7E /* Assets.xcassets */,
+				B43FBB2327847D7D00FF20F2 /* Info.plist */,
 			);
 			path = SwiftUILab3;
 			sourceTree = "<group>";
@@ -82,14 +127,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B488E020278C384200AB9FCD /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B488E021278C384F00AB9FCD /* ApiLogger.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		B4B6C8D027821F16003D0C1D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B43FBB2827848C8000FF20F2 /* Components */,
 				B4B6C8D127821F25003D0C1D /* ContentView.swift */,
 				B49CAD2C27832A19001543CE /* LoginView.swift */,
 				B43FBB1D278470CD00FF20F2 /* RegisterView.swift */,
 				B43FBB1F2784739300FF20F2 /* ProfileView.swift */,
 				B43FBB242784897B00FF20F2 /* OtherUserProfileView.swift */,
+				B43FBB2627848B0D00FF20F2 /* UserListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -178,13 +233,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B488E022278C384F00AB9FCD /* ApiLogger.swift in Sources */,
 				B43FBB252784897B00FF20F2 /* OtherUserProfileView.swift in Sources */,
 				B461FFE82749218700316D7E /* SwiftUILab3App.swift in Sources */,
 				B43FBB1E278470CD00FF20F2 /* RegisterView.swift in Sources */,
+				B43FBB2727848B0D00FF20F2 /* UserListView.swift in Sources */,
+				B43FBB2A27848CD400FF20F2 /* ProfileImageView.swift in Sources */,
 				B4B6C8D227821F25003D0C1D /* ContentView.swift in Sources */,
 				B49CAD2D27832A19001543CE /* LoginView.swift in Sources */,
+				B488E01F278C355200AB9FCD /* BaseInterceptor.swift in Sources */,
 				B43FBB202784739300FF20F2 /* ProfileView.swift in Sources */,
 				B4B6C8D627821F70003D0C1D /* User.swift in Sources */,
+				B45D17E327886E31006D55EB /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
