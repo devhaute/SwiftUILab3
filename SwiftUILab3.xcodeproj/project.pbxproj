@@ -18,10 +18,13 @@
 		B461FFEF2749218900316D7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B461FFEE2749218900316D7E /* Preview Assets.xcassets */; };
 		B488E01F278C355200AB9FCD /* BaseInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B488E01E278C355200AB9FCD /* BaseInterceptor.swift */; };
 		B488E022278C384F00AB9FCD /* ApiLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B488E021278C384F00AB9FCD /* ApiLogger.swift */; };
+		B488E024278C3C5B00AB9FCD /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B488E023278C3C5B00AB9FCD /* AuthRouter.swift */; };
 		B49CAD2D27832A19001543CE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B49CAD2C27832A19001543CE /* LoginView.swift */; };
 		B4B6C8D227821F25003D0C1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B6C8D127821F25003D0C1D /* ContentView.swift */; };
 		B4B6C8D627821F70003D0C1D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B6C8D527821F70003D0C1D /* User.swift */; };
 		B4BD59EE277CAF060038839A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B4BD59ED277CAF060038839A /* Alamofire */; };
+		B4D8382A278F18F20005053C /* AuthApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D83829278F18F20005053C /* AuthApiService.swift */; };
+		B4D8382C278F1BE50005053C /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D8382B278F1BE50005053C /* Token.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,9 +41,12 @@
 		B461FFEE2749218900316D7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B488E01E278C355200AB9FCD /* BaseInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInterceptor.swift; sourceTree = "<group>"; };
 		B488E021278C384F00AB9FCD /* ApiLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiLogger.swift; sourceTree = "<group>"; };
+		B488E023278C3C5B00AB9FCD /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
 		B49CAD2C27832A19001543CE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B4B6C8D127821F25003D0C1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B4B6C8D527821F70003D0C1D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B4D83829278F18F20005053C /* AuthApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApiService.swift; sourceTree = "<group>"; };
+		B4D8382B278F1BE50005053C /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,7 @@
 		B45D17DF27885FCA006D55EB /* API */ = {
 			isa = PBXGroup;
 			children = (
+				B4D83828278F18D80005053C /* Service */,
 				B45D17E027885FD6006D55EB /* Router */,
 				B45D17E127885FDF006D55EB /* Interceptor */,
 				B488E020278C384200AB9FCD /* Helper */,
@@ -77,6 +84,7 @@
 		B45D17E027885FD6006D55EB /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				B488E023278C3C5B00AB9FCD /* AuthRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -153,8 +161,17 @@
 			isa = PBXGroup;
 			children = (
 				B4B6C8D527821F70003D0C1D /* User.swift */,
+				B4D8382B278F1BE50005053C /* Token.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B4D83828278F18D80005053C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B4D83829278F18F20005053C /* AuthApiService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,11 +256,14 @@
 				B43FBB1E278470CD00FF20F2 /* RegisterView.swift in Sources */,
 				B43FBB2727848B0D00FF20F2 /* UserListView.swift in Sources */,
 				B43FBB2A27848CD400FF20F2 /* ProfileImageView.swift in Sources */,
+				B4D8382C278F1BE50005053C /* Token.swift in Sources */,
 				B4B6C8D227821F25003D0C1D /* ContentView.swift in Sources */,
 				B49CAD2D27832A19001543CE /* LoginView.swift in Sources */,
+				B488E024278C3C5B00AB9FCD /* AuthRouter.swift in Sources */,
 				B488E01F278C355200AB9FCD /* BaseInterceptor.swift in Sources */,
 				B43FBB202784739300FF20F2 /* ProfileView.swift in Sources */,
 				B4B6C8D627821F70003D0C1D /* User.swift in Sources */,
+				B4D8382A278F18F20005053C /* AuthApiService.swift in Sources */,
 				B45D17E327886E31006D55EB /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
