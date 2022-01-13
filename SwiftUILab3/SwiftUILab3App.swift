@@ -6,6 +6,7 @@ struct SwiftUILab3App: App {
         WindowGroup {
             NavigationView {
                 ContentView()
+                    .environmentObject(UserViewModel())
             }
         }
     }

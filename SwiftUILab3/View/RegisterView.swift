@@ -6,6 +6,25 @@ struct RegisterView: View {
     @State private var passwordInput = ""
     @State private var passwordCheckInput = ""
     
+    @State fileprivate var shouldShowAlert: Bool = false
+    
+    @EnvironmentObject var userVM: UserViewModel {
+        didSet {
+            if userVM.loggedInUser != nil {
+                self.shouldShowAlert = true
+            }
+        }
+    }
+    @Environment(\.dismiss) var dismiss
+    
+    private func register(name: String, email: String, password: String) {
+        guard !name.isEmpty, !emailInput.isEmpty, !passwordInput.isEmpty, passwordInput == passwordCheckInput  else {
+            return
+        }
+        
+        userVM.register(name: nameInput, email: emailInput, password: passwordInput)
+    }
+    
     var body: some View {
         VStack {
             Form {
@@ -35,12 +54,19 @@ struct RegisterView: View {
                 
                 Section {
                     Button {
-                        // TODO: 
+                        register(name: nameInput, email: emailInput, password: passwordInput)
                     } label: {
                         Text("회원가입하기")
                     }
-
                 }
+            }
+            .alert("회원가입이 완료되었습니다.", isPresented: $shouldShowAlert) {
+                Button {
+                    self.dismiss()
+                } label: {
+                    Text("확인")
+                }
+
             }
         }
         .navigationTitle("회원가입")

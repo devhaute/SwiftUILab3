@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B424465A27901E7B00C6C43C /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424465927901E7B00C6C43C /* AuthResponse.swift */; };
+		B424465E279021D700C6C43C /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B424465D279021D700C6C43C /* UserViewModel.swift */; };
 		B43FBB1E278470CD00FF20F2 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43FBB1D278470CD00FF20F2 /* RegisterView.swift */; };
 		B43FBB202784739300FF20F2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43FBB1F2784739300FF20F2 /* ProfileView.swift */; };
 		B43FBB252784897B00FF20F2 /* OtherUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43FBB242784897B00FF20F2 /* OtherUserProfileView.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B424465927901E7B00C6C43C /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		B424465D279021D700C6C43C /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		B43FBB1D278470CD00FF20F2 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		B43FBB1F2784739300FF20F2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		B43FBB2327847D7D00FF20F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +65,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B424465B27901E9000C6C43C /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				B424465927901E7B00C6C43C /* AuthResponse.swift */,
+				B4B6C8D527821F70003D0C1D /* User.swift */,
+				B4D8382B278F1BE50005053C /* Token.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		B424465C2790218600C6C43C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B424465D279021D700C6C43C /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		B43FBB2827848C8000FF20F2 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +140,7 @@
 			children = (
 				B4B6C8D427821F4B003D0C1D /* Model */,
 				B45D17DF27885FCA006D55EB /* API */,
+				B424465C2790218600C6C43C /* ViewModel */,
 				B4B6C8D027821F16003D0C1D /* View */,
 				B461FFE72749218700316D7E /* SwiftUILab3App.swift */,
 				B461FFED2749218900316D7E /* Preview Content */,
@@ -160,8 +183,7 @@
 		B4B6C8D427821F4B003D0C1D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B4B6C8D527821F70003D0C1D /* User.swift */,
-				B4D8382B278F1BE50005053C /* Token.swift */,
+				B424465B27901E9000C6C43C /* Auth */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -264,6 +286,8 @@
 				B43FBB202784739300FF20F2 /* ProfileView.swift in Sources */,
 				B4B6C8D627821F70003D0C1D /* User.swift in Sources */,
 				B4D8382A278F18F20005053C /* AuthApiService.swift in Sources */,
+				B424465E279021D700C6C43C /* UserViewModel.swift in Sources */,
+				B424465A27901E7B00C6C43C /* AuthResponse.swift in Sources */,
 				B45D17E327886E31006D55EB /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
